@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_back"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="4dp" >
+    
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="      로그인페이지로 돌아가시겠습니까?      "
+        android:textSize="14dp"
+        android:gravity="center_horizontal|bottom"
+        />
+    
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|top" >"
+        
+        <Button android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="종료하기"
+            android:textSize="8dp" />
+        
+        <Button android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="돌아가기"
+            android:textSize="8dp" />
+        
+    </LinearLayout>
+        
+    
+</LinearLayout>

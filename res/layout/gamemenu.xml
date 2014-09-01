@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/game_menu_back"
+        >
+        
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+		android:background="@drawable/rank_plan" />
+    
+    
+    <TextView 
+        android:id="@+id/myRank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:textColor="#f00f0f"
+        android:textSize="30sp"
+        android:gravity="center" />
+    
+    <ListView
+        android:id="@+id/topRank"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:divider="@drawable/rank_wall"
+        android:dividerHeight="4sp" />
+    
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+	        android:orientation="horizontal" >
+	        
+	        <Button
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:id="@+id/recreate_btn"
+	            android:onClick="mOnClick"
+	            android:text="새로고침" />
+
+	        <Button
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:id="@+id/makerinfo_btn"
+	            android:onClick="mOnClick"
+	            android:text="제작자정보" />
+	        
+	        <Button
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_weight="1"
+	            android:id="@+id/game_btn"
+	            android:onClick="mOnClick"
+	            android:text="게임시작" />
+	        
+	        
+	    </LinearLayout>
+        
+    
+    
+</LinearLayout>
